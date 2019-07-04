@@ -1,0 +1,164 @@
+body {
+    background-color: blue;
+    display: flex;
+}
+
+
+.block {
+    /* padding: 2px;
+    background: #1abc9c;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    position: absolute;
+    top: 0vh;
+    width: 180vw;
+    height: 8vh; */
+    background-color: green;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 0vh;
+    left: 5;
+    right: 5;
+
+}
+
+.rectangle {
+    background-color: black;
+    height: 38vh;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+li {
+    list-style: none;
+  color: #f2f2f2;
+  /* padding: 14px 80vw; */
+  font-size: 17px;
+  float: right;
+  margin: 16px;
+
+  /* display: flex;
+  justify-content: space-around; */
+  position: absolute;
+  top:0vh;
+  right: 5vh;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+
+.container  {
+        /* display: flex;
+        flex-direction: row; */
+        /* flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch; */
+        position: relative;   
+        top: 50vh;
+
+
+}
+
+.block-1{
+    background-color: brown;
+    height: 20vh;
+    width: 10vw;
+    float: left; 
+    border-radius: 20%;
+     
+}
+
+.block-2{
+    background-color: red;
+    height: 20vh;
+    width: 10vw;
+    float: left;
+    border-radius: 20%;
+    position: relative;
+    left: 35vw;
+}
+
+.block-3{
+    background-color: yellow;
+    height: 20vh;
+    width: 10vw;
+    float: left;
+    border-radius: 20%;
+    position: relative;
+    left: 66vw;
+}
+
+.container-2 {
+    position: relative;
+    top: 10vh
+}
+
+.rectangle-1 {
+    background-color: yellow;
+    height: 22vh;
+    width: 28vw;
+    float: left;
+    position: relative;
+    left: 5vw;
+}
+
+.rectangle-2 {
+    background-color: black;
+    height: 22vh;
+    width: 28vw;
+    float: left;
+    position: relative;
+    left: 40vw;
+}
+
+.container-3 {
+    position: absolute;
+    top: 40vh
+}
+
+.text {
+    background-color: blue;
+    height: 2vh;
+    width: 28vw;
+    float: left;
+    position: relative;
+    left: 5vw;
+    top: 20vh;
+}
+
+.image  {
+    float: left;
+    position: absolute;
+    left: 60vw;
+    top: 4vh;
+}
+
+
+.last {
+    position: absolute;
+    top: 150vh
+}
+
+.footer {
+    background-color: orange;
+    float: left;
+    height: 10vh;
+    width: 100vw;
+}
