@@ -101,12 +101,13 @@ let me = {
 // Loop over the passed in arr param. If the number is GREATER than 100, push 'big' as a string to the answers array. 
 // If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function
 
-let bigOrSmall = arr => {
+let bigOrSmall = (arr, num) => {
 	let answers = []
-	for(i = 0; i < arr.length; i++){
-		if(i > 100){
+
+	for(num = 0; num < arr.length; num++){
+		if(num > 100){
 			answers.push('big')
-		} else if (i <= 100) {
+		} else if (num <= 100) {
 			answers.push('small')
 		} 
 	} 
@@ -121,8 +122,8 @@ let bigOrSmall = arr => {
 
 let arrayReverser = arr => {
 	let reversed = []
-	for(i = 0; i > arr.length; i--){
-	reversed.push(arr)
+	for(i = arr.length - 1; i >= 0; i--){
+	reversed.push(arr[i])
 	}
 return reversed
 } 
@@ -176,7 +177,8 @@ const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 //////////////////PROBLEM 19////////////////////
 
-// Using the people array, let's filter out everyone that isn't our friend to a new array called 'enemies'. Use .filter()
+// Using the people array, let's filter out everyone that isn't our friend 
+//to a new array called 'enemies'. Use .filter()
 const people = [
 	{ name: 'Landy', friend: true, awesomeLevel: 10 },
 	{ name: 'Jeremy', friend: true, awesomeLevel: 10 },
@@ -186,7 +188,13 @@ const people = [
 	{ name: 'George', friend: true, awesomeLevel: 7 }
 ]
 
-// Code Here
+let enemies  = people.filter(people => people.friend === 'true')
+
+// let isEnemy = (boolean) => { (boolean === true)}
+  
+//   let enemies = people.filter(isEnemy)
+
+
 
 //////////////////PROBLEM 20////////////////////
 
