@@ -202,6 +202,6 @@ let enemies  = people.filter(people => people.friend === false)
 
 
 
-let totallyAwesome = people.reduce((acc, cv) => {
-	return acc + cv
+let totallyAwesome = people.reduce((acc, cv, ) => {
+	return acc + cv.awesomeLevel
 })
