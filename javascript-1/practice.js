@@ -173,6 +173,7 @@ myNumbers.forEach( function (element , index, array) {
 // Let's go ahead and change everyone's name in the notGeorge array to George using .map. Call the new array 'forTheLoveOfGeorge'
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
+let forTheLoveOfGeorge = notGeorge.map(notgeorge => 'George')
 
 
 //////////////////PROBLEM 19////////////////////
@@ -188,11 +189,9 @@ const people = [
 	{ name: 'George', friend: true, awesomeLevel: 7 }
 ]
 
-let enemies  = people.filter(people => people.friend === 'true')
+let enemies  = people.filter(people => people.friend === false)
 
-// let isEnemy = (boolean) => { (boolean === true)}
-  
-//   let enemies = people.filter(isEnemy)
+
 
 
 
@@ -201,8 +200,9 @@ let enemies  = people.filter(people => people.friend === 'true')
 // Using the people array above, let's get a total of the awesomeLevel from all the people. Call the new array 'totallyAwesome'. Use .reduce()
 
 
-let totall = people.reduce((total, cv, ci, arr ) => {
 
-let totallyAwesome = people[0].awesomeLevel * cv
-
+let totallyAwesome = people.reduce((total, cv) => {
+	if(total.awesomeLevel === true){
+	total += cv
+	}
 })
